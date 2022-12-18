@@ -1,0 +1,8 @@
+FROM alpine:3.14
+RUN apk add python3 && apk add git
+RUN cd home/
+RUN git clone git@github.com:jlgsobreiro/tcc_distribuido.git
+RUN cd tcc_distribuido/
+RUN pip install requirements.txt
+
+RUN python3 app.py
