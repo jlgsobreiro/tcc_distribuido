@@ -4,6 +4,5 @@ RUN cd home/
 RUN git clone https://github.com/jlgsobreiro/tcc_distribuido.git
 WORKDIR tcc_distribuido/
 EXPOSE 5000
-ENTRYPOINT ["flask"]
 RUN pip3 install -r requirements.txt && flask run --host=0.0.0.0
 

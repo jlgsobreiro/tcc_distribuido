@@ -1,1 +1,3 @@
-flask
+flask~=2.2.2
+pycryptodome~=3.16
+pythonp2p~=1.7.1
