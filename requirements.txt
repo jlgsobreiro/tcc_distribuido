@@ -1,7 +1,7 @@
 flask~=2.2.2
 pycryptodome~=3.16
 pythonp2p~=1.7.1
-umsgpack
-pyp2p
-future
-psutil
+# umsgpack
+# pyp2p
+# future
+# psutil
