@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from pythonp2p import Node
 
 app = Flask(__name__)
-node = Node('127.0.0.1', 65432, 65433)  # start the node
+
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -24,6 +24,6 @@ def salvar():  # put application's code here
 
 
 if __name__ == '__main__':
+    node = Node('127.0.0.1', 65432, 65433)  # start the node
     node.start()
-    node.connect_to('127.0.0.1', 65432)
     app.run(host='0.0.0.0')
